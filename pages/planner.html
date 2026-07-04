@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Academic Planner — Foluwasho Favour</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <nav>
+    <a href="../index.html" class="nav-logo">FF.</a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="planner.html" class="active">Planner</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="page-wrapper">
+    <div class="page-hero">
+      <div class="page-hero-inner">
+        <p class="section-eyebrow">Stay Organised</p>
+        <h1 class="section-title">Academic Planner</h1>
+        <p class="section-subtitle">Add tasks, track progress, and never miss a deadline. Tasks are saved in your browser.</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="section-inner">
+        <div class="planner-layout">
+
+          <!-- Add Task Form -->
+          <aside>
+            <div class="card" style="position:sticky;top:84px">
+              <h2 style="font-family:var(--font-display);color:var(--clr-white);margin-bottom:1.25rem;font-size:1.2rem">Add New Task</h2>
+              <form id="addTaskForm" novalidate>
+                <div class="form-group">
+                  <label for="taskText">Task Description *</label>
+                  <input type="text" id="taskText" class="form-control" placeholder="e.g. Submit CSC103 assignment" required maxlength="120" />
+                </div>
+                <div class="form-group">
+                  <label for="taskCategory">Category</label>
+                  <select id="taskCategory" class="form-control">
+                    <option value="Assignment">Assignment</option>
+                    <option value="Exam Prep">Exam Prep</option>
+                    <option value="Reading">Reading</option>
+                    <option value="Project">Project</option>
+                    <option value="Lab Work">Lab Work</option>
+                    <option value="Personal">Personal</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="taskPriority">Priority</label>
+                  <select id="taskPriority" class="form-control">
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                    <option value="low">Low</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="taskDue">Due Date</label>
+                  <input type="date" id="taskDue" class="form-control" />
+                </div>
+                <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">Add Task →</button>
+              </form>
+            </div>
+          </aside>
+
+          <!-- Task List -->
+          <main>
+            <!-- Stats -->
+            <div class="planner-stats">
+              <div class="pstat">
+                <span class="pstat-num" id="statTotal">0</span>
+                <span class="pstat-label">Total</span>
+              </div>
+              <div class="pstat">
+                <span class="pstat-num" id="statDone">0</span>
+                <span class="pstat-label">Done</span>
+              </div>
+              <div class="pstat">
+                <span class="pstat-num" id="statPending">0</span>
+                <span class="pstat-label">Pending</span>
+              </div>
+            </div>
+
+            <!-- Filters -->
+            <div class="task-filters">
+              <button class="filter-btn active" data-filter="all">All Tasks</button>
+              <button class="filter-btn" data-filter="active">Pending</button>
+              <button class="filter-btn" data-filter="completed">Completed</button>
+              <button class="filter-btn" id="clearCompleted" data-filter="clear" style="margin-left:auto;background:transparent;border-color:rgba(220,60,60,0.3);color:#E77">Clear Done</button>
+            </div>
+
+            <!-- List -->
+            <div class="task-list" id="taskList">
+              <div class="planner-empty">
+                <div class="empty-icon">📋</div>
+                <p>No tasks yet. Add one using the form on the left!</p>
+              </div>
+            </div>
+          </main>
+
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <p class="footer-name">Foluwasho Favour</p>
+      <p class="footer-text">Computer Science · MIVA Open University · 2025/B/CSC/0651</p>
+      <ul class="footer-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html">Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <div class="toast"></div>
+  <script src="../js/main.js"></script>
+  <script src="../js/planner.js"></script>
+</body>
+</html>

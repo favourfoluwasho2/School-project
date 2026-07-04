@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Foluwasho Favour</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <nav>
+    <a href="../index.html" class="nav-logo">FF.</a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="planner.html">Planner</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="page-wrapper">
+    <div class="page-hero">
+      <div class="page-hero-inner">
+        <p class="section-eyebrow">Get In Touch</p>
+        <h1 class="section-title">Let's Connect</h1>
+        <p class="section-subtitle">Have a question, collaboration idea, or just want to say hi? I'd love to hear from you.</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="section-inner">
+        <div class="contact-layout">
+
+          <!-- Info side -->
+          <div>
+            <p class="section-eyebrow fade-in">Contact Information</p>
+            <h2 class="section-title fade-in fade-delay-1" style="font-size:1.8rem">Reach Out Anytime</h2>
+            <p style="color:var(--clr-muted);line-height:1.8;max-width:400px" class="fade-in fade-delay-2">
+              Whether you want to discuss a project, academic collaboration, or simply connect 
+              with a fellow technology enthusiast — my inbox is always open.
+            </p>
+
+            <div class="contact-info-items">
+              <div class="contact-info-item fade-in">
+                <div class="contact-icon">📧</div>
+                <div>
+                  <p class="contact-label">Email</p>
+                  <p class="contact-value">f.foluwasho3222@miva.edu.ng</p>
+                </div>
+              </div>
+              <div class="contact-info-item fade-in fade-delay-1">
+                <div class="contact-icon">🎓</div>
+                <div>
+                  <p class="contact-label">University</p>
+                  <p class="contact-value">MIVA Open University</p>
+                </div>
+              </div>
+              <div class="contact-info-item fade-in fade-delay-2">
+                <div class="contact-icon">🆔</div>
+                <div>
+                  <p class="contact-label">Matriculation Number</p>
+                  <p class="contact-value">2025/B/CSC/0651</p>
+                </div>
+              </div>
+              <div class="contact-info-item fade-in fade-delay-3">
+                <div class="contact-icon">📌</div>
+                <div>
+                  <p class="contact-label">Location</p>
+                  <p class="contact-value">Nigeria</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Audio element for multimedia requirement -->
+            <div class="card fade-in" style="margin-top:2rem;padding:1.25rem">
+              <p style="font-size:0.8rem;color:var(--clr-muted);margin-bottom:0.75rem;text-transform:uppercase;letter-spacing:0.06em">🎵 Background Ambience</p>
+              <audio controls style="width:100%;border-radius:var(--radius)">
+                <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg" />
+                <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg" />
+                Your browser does not support the audio element.
+              </audio>
+              <p style="font-size:0.75rem;color:var(--clr-muted);margin-top:0.5rem">Sample audio — replace with personal recording</p>
+            </div>
+          </div>
+
+          <!-- Form side -->
+          <div class="contact-form fade-in fade-delay-1">
+            <div class="card">
+              <h2 style="font-family:var(--font-display);color:var(--clr-white);margin-bottom:1.5rem;font-size:1.3rem">Send a Message</h2>
+              <form id="contactForm" novalidate>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" class="form-control" placeholder="Your name" />
+                    <span class="form-message" id="nameMsg"></span>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" class="form-control" placeholder="you@email.com" />
+                    <span class="form-message" id="emailMsg"></span>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number *</label>
+                  <input type="tel" id="phone" class="form-control" placeholder="08012345678" />
+                  <span class="form-message" id="phoneMsg"></span>
+                </div>
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <select id="subject" class="form-control">
+                    <option value="">Select a subject</option>
+                    <option>Academic Collaboration</option>
+                    <option>Project Inquiry</option>
+                    <option>General Message</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="message">Message *</label>
+                  <textarea id="message" class="form-control" rows="5" placeholder="Write your message here…" style="resize:vertical"></textarea>
+                  <span class="form-message" id="messageMsg"></span>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">Send Message →</button>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <p class="footer-name">Foluwasho Favour</p>
+      <p class="footer-text">Computer Science · MIVA Open University · 2025/B/CSC/0651</p>
+      <ul class="footer-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html">Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <div class="toast"></div>
+  <script src="../js/main.js"></script>
+  <script src="../js/contact.js"></script>
+</body>
+</html>
